@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --green: #2ec4b6;
+    --yellow: #ff9f1c;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #0496ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    height: 50%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .circle__bg{
+    height: 100%;
+    width: 70%;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.container .text__container{
+    height: 70%;
+    width: 80%;
+    background-color: var(--green);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 115px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 10px 20px 20px rgba(27, 67, 50, 0.5);
+}
+
+.container .left__quote{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 21;
+    background-color: var(--green);
+    color: var(--yellow);
+    padding: 10px 20px;
+    font-size: 70px;
+    transform: skewY(-8deg);
+}
+
+.container .right__quote{
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    z-index: 21;
+    background-color: var(--green);
+    color: var(--yellow);
+    padding: 10px 20px;
+    font-size: 70px;
+    transform: skewY(10deg);
+}
+
+.container .profile__pic{
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 31;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.container .profile__pic img{
+    height: 100%;
+    width: 100%;
+}
+
+h3{
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 41;
+    color: white;
+    font-size: 2.4rem;
+}
+
+small{
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 41;
+    font-size: 1rem;
+}
